@@ -24,12 +24,10 @@ function loadDogSound(url) {
 	
 	// Decode asynchronously
 	request.onload = function() {
-		context.decodeAudioData(
-			request.response, 
+		context.decodeAudioData(request.response).then( 
 			function(buffer) {
 				dogBarkingBuffer = buffer;
-			}, 
-			onError
+			}
 		);
 	}
 	request.send();
