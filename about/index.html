@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>voice-share | Share your voice on an exact object | by Wallace</title>
+    
+    <meta name="description" content="voice-share is a tool to share your voice on an exact object." />
+    <meta name="author" content="Wallace" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/voice-share.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="loss" class="step slide" data-x="-1000" data-y="-1500">
+        <q>参观展览感到<strong>摸不到头脑</strong>？</q>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-1500">
+        <q>
+			面对展品<strong>灵感突现</strong>，<br />
+			却苦于无法<strong>及时</strong>捕捉？
+		</q>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <q>希望把<strong>独到见解</strong>分享给他人？</q>
+    </div>
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">来尝试一下</span>
+        <h1>谈笑风生<sup>*</sup></h1>
+        <span class="footnote"><sup>*</sup> by Wallace</span>
+    </div>
+
+    <div id="author" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="3">
+        <q>Wallace成员（字典序）</q>
+		<p><br /></p>
+		<table>
+			<tr>
+				<td>Rholais</td>
+				<td>前端开发</td>		
+			</tr>
+			<tr>
+				<td>SBZK</td>
+				<td>前端设计</td>		
+			</tr>
+			<tr>
+				<td>Stiller</td>
+				<td>后端开发</td>		
+			</tr>
+		</table>
+    </div>
+
+    <div id="goal" class="step" data-x="-1150" data-y="3000" data-rotate="90" data-scale="3">
+		<q>完成目标</q>
+		<p><br /></p>
+        <ul style="list-style-type:disc">
+			<li>扫码加载对应展品链接</li>
+			<li>分享语音</li>
+			<li>聆听他人语音</li>
+		</ul>  
+    </div>
+
+    <div id="overview" class="step" data-x="0" data-y="700" data-scale="8">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
