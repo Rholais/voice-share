@@ -1,20 +1,15 @@
 var context;
 window.addEventListener('load', init, false);
 function init() {
-	try {
-	  var dogBarkingUrl = 'https://upload.wikimedia.org/wikipedia/commons/c/ce/Sound-of-dog.ogg';
-		var dogBarkingBuffer = null;
-		// Fix up prefixing
-		window.AudioContext = window.AudioContext || window.webkitAudioContext;
-		context = new AudioContext();
+	var dogBarkingUrl = 'https://upload.wikimedia.org/wikipedia/commons/c/ce/Sound-of-dog.ogg';
+	var dogBarkingBuffer = null;
+	// Fix up prefixing
+	window.AudioContext = window.AudioContext || window.webkitAudioContext;
+	context = new AudioContext();
 	
-		loadDogSound(dogBarkingUrl);
-		alert('Sound Loaded');
-		playSound(dogBarkingBuffer);
-	}
-	catch(e) {
-		alert('Web Audio API is not supported in this browser');
-	}
+	loadDogSound(dogBarkingUrl);
+	alert('Sound Loaded');
+	playSound(dogBarkingBuffer);
 }
 
 function loadDogSound(url) {
