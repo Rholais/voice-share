@@ -2,7 +2,7 @@ var context;
 window.addEventListener('load', init, false);
 function init() {
 	try {
-	  var dogBarkingUrl = 'https://commons.wikimedia.org/wiki/File:Sound-of-dog.ogg';
+	  var dogBarkingUrl = 'https://upload.wikimedia.org/wikipedia/commons/c/ce/Sound-of-dog.ogg';
 		var dogBarkingBuffer = null;
 		// Fix up prefixing
 		window.AudioContext = window.AudioContext || window.webkitAudioContext;
