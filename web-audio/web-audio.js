@@ -9,11 +9,10 @@ function init() {
 		context = new AudioContext();
 	
 		loadDogSound(dogBarkingUrl);
-		alert('Sound Loaded');
 		playSound(dogBarkingBuffer);
 	}
 	catch(e) {
-		alert('Web Audio API is not supported in this browser');
+		alert('Web Audio API is not supported in this browser' + e.err);
 	}
 }
 
@@ -27,7 +26,7 @@ function loadDogSound(url) {
 		context.decodeAudioData(
 			request.response,
 			playSound,
-			function(e){"Error with decoding audio data" + e.err}
+			function(e){'Error with decoding audio data' + e.err}
 		);
 	}
 	request.send();
