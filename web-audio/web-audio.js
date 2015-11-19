@@ -27,7 +27,7 @@ function loadDogSound(url) {
 		context.decodeAudioData(
 			request.response,
 			playSound,
-			function(e){"Error with decoding audio data" + e.err});
+			function(e){"Error with decoding audio data" + e.err}
 		);
 	}
 	request.send();
