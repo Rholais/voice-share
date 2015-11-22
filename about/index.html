@@ -10,8 +10,6 @@
     <meta name="description" content="voice-share is a tool to share your voice on an exact object." />
     <meta name="author" content="Wallace" />
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
-
     <link href="css/impress-demo.css" rel="stylesheet" />
     <link href="css/voice-share.css" rel="stylesheet" />
     
@@ -29,18 +27,23 @@
 <div id="impress">
 
     <div id="loss" class="step slide" data-x="-1000" data-y="-1500">
-        <q>参观展览感到<strong>摸不到头脑</strong>？</q>
+		<div class="describe">
+			<q>参观展览感到<strong>摸不到头脑</strong>？</q>
+		</div>
     </div>
 
-    <div class="step slide" data-x="0" data-y="-1500">
-        <q>
-			面对展品<strong>灵感突现</strong>，<br />
-			却苦于无法<strong>及时</strong>捕捉？
-		</q>
+    <div id="express" class="step slide" data-x="0" data-y="-1500">
+		<div class="describe">
+			<q>
+				面对展品<strong>灵感突现</strong>却无法<strong>及时</strong>捕捉？
+			</q>
+		</div>
     </div>
 
-    <div class="step slide" data-x="1000" data-y="-1500">
-        <q>希望把<strong>独到见解</strong>分享给他人？</q>
+    <div id="share" class="step slide" data-x="1000" data-y="-1500">
+		<div class="describe">
+			<q>希望把<strong>独到见解</strong>分享给他人？</q>
+		</div>
     </div>
 
     <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
@@ -49,26 +52,42 @@
         <span class="footnote"><sup>*</sup> by Wallace</span>
     </div>
 
-    <div id="author" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="3">
+    <div id="author" class="step slide" data-x="850" data-y="3000" data-rotate="90" data-scale="3">
         <q>Wallace成员（字典序）</q>
 		<p><br /></p>
 		<table>
 			<tr>
-				<td>Rholais</td>
+				<td>任然</td>
+				<td>后端开发</td>		
+			</tr>
+			<tr>
+				<td>李浩成</td>
 				<td>前端开发</td>		
 			</tr>
 			<tr>
-				<td>SBZK</td>
-				<td>前端设计</td>		
+				<td>张中伟</td>
+				<td>界面设计</td>
 			</tr>
 			<tr>
-				<td>Stiller</td>
-				<td>后端开发</td>		
+				<td>张炜康</td>
+				<td>前端设计</td>		
 			</tr>
+
 		</table>
     </div>
 
-    <div id="goal" class="step" data-x="-1150" data-y="3000" data-rotate="90" data-scale="3">
+    <div id="us" class="step slide" data-x="850" data-y="3000" data-z="-10" data-rotate="90" data-rotate-x="-180"  data-scale="3">
+		<img src="../img/us.png" />
+    </div>
+
+    <div id="arch" class="step slide" data-x="-2150" data-y="3000" data-z="10" data-rotate="90" data-rotate-x="-180" data-scale="3">
+		<q>架构</q>
+		<p><br /></p>
+        <img src="../img/arch/arch.png" /> 
+    </div>
+
+	
+    <div id="goal" class="step" data-x="-4150" data-y="3000" data-z="10" data-rotate="90" data-rotate-x="-180" data-scale="3">
 		<q>完成目标</q>
 		<p><br /></p>
         <ul style="list-style-type:disc">
@@ -78,6 +97,7 @@
 		</ul>  
     </div>
 
+	
     <div id="overview" class="step" data-x="0" data-y="700" data-scale="8">
     </div>
 

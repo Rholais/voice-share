@@ -9,3 +9,51 @@ th, td {
     padding: 5px;
     text-align: left;
 }
+
+div .describe {
+	height: 148px;
+	width: 100%;
+	position: relative;
+	top: 0px;
+	background: #fff;
+	opacity:0.7;
+	padding: 0px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+div .describe q {
+	margin-top: 0px;
+	line-height: 148px;
+	text-align: center;
+	vertical-align: text-middle;
+}
+
+div #loss {
+	background-image: url("../../img/levant.jpg");
+	padding: 0px;
+    margin: 0px auto;
+}
+
+div #express {
+	background-image: url("../../img/almond.jpg");
+	padding: 0px;
+    margin: 0px auto;
+}
+
+div #share {
+	background-image: url("../../img/nighthawks.jpg");
+	padding: 0px;
+    margin: 0px auto;
+}
+
+img {
+	display: block;
+    margin: auto;
+}
+
+q {
+	margin-top: 50px
+}
